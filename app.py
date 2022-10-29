@@ -49,7 +49,7 @@ def hexToBin(h):
 def main():
     # print(len("My cipher is god"), strToBin("My cipher is god"), sep="\n")
     block_size = 128
-    if len(sys.agrv) > 1:
+    if len(sys.argv) > 1:
         block_size = int(sys.argv[1])
     keys_dir = "keys"
     if not os.path.isdir(keys_dir):
